@@ -15,7 +15,9 @@ public class StaticBlockSingleton {
         }
     }
 
-    private StaticBlockSingleton(){}
+    private StaticBlockSingleton(){
+        System.out.println("static block init");
+    }
 
     public static StaticBlockSingleton getInstance(){
         return INSTANCE;
